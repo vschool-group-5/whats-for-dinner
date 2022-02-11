@@ -1,0 +1,25 @@
+{
+  "name": "whats_for_dinner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vschool-group-5/whats-for-dinner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vschool-group-5/whats-for-dinner/issues"
+  },
+  "homepage": "https://github.com/vschool-group-5/whats-for-dinner#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "morgan": "^1.10.0"
+  }
+}
