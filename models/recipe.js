@@ -4,7 +4,10 @@ const { Schema } = mongoose
 const commentSchema = new Schema({
     author: String,
     comment: String,
-    date: Date
+    date: {
+        type: Date,
+        default: Date.now
+    }
 })
 
 const recipeSchema = new Schema({
