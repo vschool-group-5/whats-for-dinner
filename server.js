@@ -9,9 +9,9 @@ app.use(morgan("dev"))
 
 mongoose.connect("mongodb://localhost:27017/whats-for-dinner-db", () => console.log("Connected to the DB"))
 
-// app.use("/foods", require("./routes/foods"))
+app.use("/foods", require("./routes/foods"))
 app.use("/user", require("./routes/user"))
-// app.use("/recipe", require("./routes/recipe"))
+app.use("/recipe", require("./routes/recipe"))
 
 app.use((err, req, res, next) => {
     console.log(err)
