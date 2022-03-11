@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "../stylesfolder/linkStyle.css"
 
-function GeneralSearchLink(){
+function GeneralSearchLink(props){
     return(
         <div>
-            <button >
-                <Link to="/generalSearch">Enter</Link>
-            </button>
+            <Link to="/generalSearch" className="nav-btn">{props.text}</Link>
         </div>
     )
 }

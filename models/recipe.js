@@ -1,31 +1,17 @@
 const mongoose = require("mongoose")
 const { Schema } = mongoose
 
-const commentSchema = new Schema({
-    author: String,
-    comment: String,
-    date: {
-        type: Date,
-        default: Date.now
-    }
-})
-
 const recipeSchema = new Schema({
-    recipeId: {
+    recipeLink: {
         type: String,
-        required: true
-    },
-    likes: {
-      type: Number,
-      default: 0
     },
     rating: {
       type: Number,
-      default: 0,
-      enum: [0, 1, 2, 3]
+      default: 1,
+      enum: [1, 2, 3]
     },
     comments: {
-      type: [commentSchema]
+      type: String
     }
 })
 

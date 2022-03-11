@@ -3,11 +3,20 @@
     padding:0%; 
 }
 #genContainer{
-    background-color: aliceblue;
-    height: 100%;
-    
-
+    padding: 20px;
+    background-color: #49B51F;
+    min-height: 100vh;
+    max-height: 100%;
 }
+
+#genContainer form {
+    margin-top: 10px;
+}
+
+#genNav {
+    display: flex;
+}
+
 #genHeader{
     text-align: center;
 }
@@ -19,6 +28,46 @@
     
 }
 #searchSection{
-    color: cadetblue;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.recipe-card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.recipe-link {
+    display: block;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: white;
+    border-color: transparent;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left: 4px;
+    padding: 0 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.searched-recipes {
+    list-style: none;
+}
+
+#gen-search-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+#rating-label {
+    margin-left: 10px;
 }

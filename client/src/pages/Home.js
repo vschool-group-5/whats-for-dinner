@@ -15,7 +15,7 @@ function Home(props){
             <section id="pageLinks">
                 <div className="pages">
                     <h3>General Search</h3>
-                    <GeneralSearchLink/>
+                    <GeneralSearchLink text="SEARCH" />
                 </div>
             </section>
         </div>
