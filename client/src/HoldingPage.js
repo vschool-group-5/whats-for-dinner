@@ -1,10 +1,21 @@
 import React from "react"
+import Home from "./pages/Home"
+import GeneralSearch from "./pages/GeneralSearch"
 
-function HoldingPage(){
+import {Switch, Route} from "react-router-dom"
+
+function HoldingFile(){
     return(
-        <div>
-            <h1>test</h1>
-        </div>
+        <>
+            <Switch>
+                <Route  exact path="/">
+                    <Home/>
+                </Route>
+                <Route path="/generalSearch">
+                    <GeneralSearch/>
+                </Route>
+            </Switch>        
+        </>
     )
 }
-export default HoldingPage
+export default HoldingFile

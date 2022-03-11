@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding:0%; 
+}
+#homeContainer{
+    background-color: #49B51F;
+    height: 100vh;
+}
+#homeHeader{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #399F2E;
+    color: #D3D3D3;
+}
+#intro{
+    text-align: center;
+}
+#pageLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    text-align: center;
+    
+}
+
+.pages{
+    font-size: 25px;
+}
